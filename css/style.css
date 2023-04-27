@@ -60,7 +60,7 @@ main {
 /*CSS nav-mobile*/
 .nav-jogos-intersena {
     display: none;
-    height: 116px;
+    height: 11.6rem;
     align-items: center;
     padding-left: 2rem;
     padding-top: 10rem;
@@ -68,29 +68,29 @@ main {
 
 .quina-nav {
     display: flex;
-    width: 230px;
-    height: 84px;
+    width: 23rem;
+    height: 8.4rem;
     background-color: #3D4DE6;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     padding: 1rem;
 }
 
 .texto-nav p {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     color: var(--neutral100);
 }
 
 .valor-nav {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .carousel-nav {
@@ -107,7 +107,7 @@ main {
 
 .jogos-nav {
     display: flex;
-    width: 200px;
+    width: 20rem;
     gap: 2rem;
 }
 
@@ -118,16 +118,16 @@ main {
 }
 
 .nav-hoje h5 {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
 }
 
 .imagem-jogo-nav {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .imagem-jogo-nav img {
@@ -136,20 +136,20 @@ main {
 }
 
 .texto-jogo-nav p {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     color: var(--neutral800);
 }
 
 .valor-texto-nav {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     color: var(--neutral600);
 }
 
@@ -455,7 +455,7 @@ table {
 }
 
 .tabela-jogos h2 {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
@@ -580,7 +580,7 @@ table {
     align-items: center;
     justify-content: center;
     width: 50%;
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 400;
     font-size: 1.4rem;
@@ -798,7 +798,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 500;
     font-size: 1.8rem;
@@ -1180,7 +1180,7 @@ table {
     padding-top: 5rem;
     padding-left: 5.4rem;
     padding-right: 5.4rem;
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -1189,7 +1189,7 @@ table {
 }
 
 .mensagens-apostadores p:nth-of-type(2) {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
@@ -1203,7 +1203,7 @@ table {
 }
 
 .data-mensagem {
-    font-family: 'Poppins';
+    font-family: var(--fontText);
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
