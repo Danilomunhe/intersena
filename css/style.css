@@ -1721,7 +1721,7 @@ table {
 }
 
 .carousel-desk>.carousel>.carousel-indicators {
-    bottom: 1rem !important;
+    bottom: -6rem !important;
 }
 
 .carousel-mobile {
