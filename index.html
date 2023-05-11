@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script src="teste.js" defer></script>
     <title>Home-Intersena</title>
@@ -32,7 +32,7 @@
     </header>
     <main>
 
-        <section class="banner-home">
+        <section class="banner-home container">
             <nav class="nav-jogos-intersena">
                 <div class="quina-nav">
                     <div class="logo">
@@ -46,12 +46,8 @@
                     </div>
                 </div>
                 <div class="carousel-nav">
-                    <div id="carouselExampleIndicatorsHomeMobile" class="carousel slide" data-ride="carousel">
-                        <!-- <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="2"></li>
-                        </ol> -->
+                    <div id="carouselExampleIndicatorsNavMobile" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-touch="true">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="container-nav-mobile">
@@ -114,11 +110,14 @@
             </nav>
             <div class="carousel-banner-desk">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="container-imagem">
@@ -139,12 +138,15 @@
                 </div>
             </div>
             <div class="carousel-banner-mobile">
-                <div id="carouselExampleIndicatorsHomeMobile" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicatorsHomeMobile" data-slide-to="2"></li>
-                    </ol>
+                <div id="carouselExampleIndicatorsMobile" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="container-imagem-mobile">
@@ -194,7 +196,7 @@
                 </div>
             </div>
         </section>
-        <section class="jogos-intersena">
+        <section class="jogos-intersena container">
             <aside>
                 <div class="jogo-semana">
                     <div class="conteudo-jogos-semana">
@@ -662,6 +664,91 @@
                             </div>
 
                         </div>
+                        <div class="item-tabela-jogo-mobile">
+                            <div class="logo-jogo">
+                                <div class="coluna1">
+                                    <div class="logo-mobile">
+                                        <img src="img/quina.png" alt="logo-quina">
+                                    </div>
+                                    <div class="nome-jogo-mobile">
+                                        <p>Quina <br> <span class="numero-loteria">2581</span></p>
+                                    </div>
+                                    <div class="acumulada">
+                                        <p>$ Acumulada</p>
+                                    </div>
+                                </div>
+                                <div class="data-jogo-mobile">
+                                    <p>08/04 sáb</p>
+                                </div>
+                            </div>
+                            <div class="valor-aposta-mobile">
+                                <div class="valor-mobile">
+                                    <p>R$ 200 Milhões</p>
+                                </div>
+                                <div class="aposta-mobile">
+                                    <p>Apostar</p>
+                                    <span class="button-mobile-aposta">></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item-tabela-jogo-mobile">
+                            <div class="logo-jogo">
+                                <div class="coluna1">
+                                    <div class="logo-mobile">
+                                        <img src="img/quina.png" alt="logo-quina">
+                                    </div>
+                                    <div class="nome-jogo-mobile">
+                                        <p>Quina <br> <span class="numero-loteria">2581</span></p>
+                                    </div>
+                                    <div class="acumulada">
+                                        <p>$ Acumulada</p>
+                                    </div>
+                                </div>
+                                <div class="data-jogo-mobile">
+                                    <p>08/04 sáb</p>
+                                </div>
+                            </div>
+                            <div class="valor-aposta-mobile">
+                                <div class="valor-mobile">
+                                    <p>R$ 200 Milhões</p>
+                                </div>
+                                <div class="aposta-mobile">
+                                    <p>Apostar</p>
+                                    <span class="button-mobile-aposta">></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item-tabela-jogo-mobile">
+                            <div class="logo-jogo">
+                                <div class="coluna1">
+                                    <div class="logo-mobile">
+                                        <img src="img/quina.png" alt="logo-quina">
+                                    </div>
+                                    <div class="nome-jogo-mobile">
+                                        <p>Quina <br> <span class="numero-loteria">2581</span></p>
+                                    </div>
+                                    <div class="acumulada">
+                                        <p>$ Acumulada</p>
+                                    </div>
+                                </div>
+                                <div class="data-jogo-mobile">
+                                    <p>08/04 sáb</p>
+                                </div>
+                            </div>
+                            <div class="valor-aposta-mobile">
+                                <div class="valor-mobile">
+                                    <p>R$ 200 Milhões</p>
+                                </div>
+                                <div class="aposta-mobile">
+                                    <p>Apostar</p>
+                                    <span class="button-mobile-aposta">></span>
+                                </div>
+                            </div>
+
+                        </div>
+
                         <div class="ver-mais-jogos">
                             <a href="#">Ver mais
                                 <div class="button-aposta">
@@ -845,11 +932,14 @@
             </div>
             <div class="carousel-desk">
                 <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                    </ol>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="cards-mensagem-container">
@@ -1008,11 +1098,14 @@
 
             <div class="carousel-mobile">
                 <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
-                    </ol>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="cards-mensagem-container">
@@ -1109,117 +1202,132 @@
             </div>
             <div class="carousel-desk">
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="cards-noticia-container">
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
-                                    </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
-                                    </div>
-                                </div>
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
-                                    </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
-                                    </div>
-                                </div>
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
-                                    </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-item">
-                            <div class="cards-noticia-container">
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="cards-noticia-container">
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <div class="categoria-artigo">
+                                                <p>Dicas</p>
+                                            </div>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
                                     </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <p class="categoria-artigo">Curiosidades</p>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <p class="categoria-artigo">Curiosidades</p>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
-                                    </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
-                                    </div>
-                                </div>
-                                <div class="card-noticia">
-                                    <div class="imagem-noticia">
-                                        <img src="img/img-artigo.png" alt="imagem artigo">
-                                    </div>
-                                    <div class="textos-artigos">
-                                        <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
-                                        </h3>
-                                        <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
-                                            conteúdo.
-                                            Listamos 4 motivos para começar a apostar hoje.</p>
-                                        <p class="data-artigo">13 de janeiro 2023</p>
-                                    </div>
-                                </div>
-                            </div>
 
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-noticia-container">
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <p class="categoria-artigo">Curiosidades</p>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <p class="categoria-artigo">Curiosidades</p>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-noticia">
+                                        <div class="imagem-noticia">
+                                            <img src="img/img-artigo.png" alt="imagem artigo">
+                                        </div>
+                                        <div class="textos-artigos">
+                                            <p class="categoria-artigo">Curiosidades</p>
+                                            <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                                apostar
+                                            </h3>
+                                            <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
+                                                conteúdo.
+                                                Listamos 4 motivos para começar a apostar hoje.</p>
+                                            <p class="data-artigo">13 de janeiro 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="carousel-mobile">
                 <div id="carouselExampleIndicatorsArtigo" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicatorsArtigo" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicatorsArtigo" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicatorsArtigo" data-slide-to="2"></li>
-                    </ol>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsArtigo" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsArtigo" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsArtigo" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="cards-noticia-container">
@@ -1229,7 +1337,8 @@
                                     </div>
                                     <div class="textos-artigos">
                                         <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
+                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                            apostar
                                         </h3>
                                         <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
                                             conteúdo.
@@ -1248,7 +1357,8 @@
                                     </div>
                                     <div class="textos-artigos">
                                         <p class="categoria-artigo">Curiosidades</p>
-                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para apostar
+                                        <h3 class="titulo-artigo">Vale a pena jogar na loteria? 4 motivos para
+                                            apostar
                                         </h3>
                                         <p class="descricao-artigo">Descubra se vale a pena jogar na loteria neste
                                             conteúdo.
@@ -1298,50 +1408,57 @@
                 </div>
                 <div class="faq-perguntas">
                     <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Como funciona o Intersena®?
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
                                     Escolha um dos jogos de nossos bolões e selecione a quantidade de cotas que deseja
                                     comprar e/ou escolha os seus próprios números na Mega-Sena. Cada jogo escolhido deve
                                     ser colocado no carrinho. Repita esta operação quantas vezes desejar.
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Como fico sabendo se fui premiado?
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Some placeholder content for the second accordion panel. This panel is hidden by
-                                    default.
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     O que é e como funciona o bolão?
-                                </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    And lastly, the placeholder content for the third and final accordion panel. This
-                                    panel is hidden by default.
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -1353,7 +1470,6 @@
             </div>
         </section>
     </main>
-
 </body>
 
 </html>
