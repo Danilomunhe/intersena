@@ -42,7 +42,7 @@ a {
 main {
     display: flex;
     flex-direction: column;
-    background-color: var(--neutral200);
+    background-color: #fcfcfc;
 }
 
 .faixa-principal {
@@ -293,10 +293,7 @@ main {
 }
 
 aside {
-    min-height: 20rem;
-    width: 27.6rem;
     padding: 1rem;
-    background-color: var(--neutral100);
 }
 
 .jogo-semana {
@@ -839,8 +836,6 @@ table {
 
 .container-cards-intersena {
     display: flex;
-    padding-top: 2rem;
-    gap: 5rem;
     justify-content: space-between;
     background-color: var(--neutral200);
     margin-bottom: 2.4rem;
@@ -849,14 +844,13 @@ table {
 .card-intersena {
     display: flex;
     flex-direction: column;
-    width: 27rem;
     height: 28rem;
     gap: 2rem;
     border: 0.1rem solid #EFF0F7;
     box-shadow: 0px .4rem 20rem -7.9rem rgba(0, 0, 0, 0.1);
     border-radius: 1.2rem;
     background-color: var(--neutral100);
-    padding: 2.4rem;
+    /* padding: 2.4rem; */
 }
 
 .card-intersena:nth-of-type(3) {
