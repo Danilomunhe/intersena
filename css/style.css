@@ -850,14 +850,14 @@ table {
     box-shadow: 0px .4rem 20rem -7.9rem rgba(0, 0, 0, 0.1);
     border-radius: 1.2rem;
     background-color: var(--neutral100);
-    /* padding: 2.4rem; */
+    padding: 2.4rem;
 }
 
-.card-intersena:nth-of-type(3) {
+.card-item-intersena:nth-of-type(3)>.card-intersena {
     padding: 0;
 }
 
-.card-intersena:nth-of-type(3) .texto-card {
+.card-item-intersena:nth-of-type(3)>.card-intersena>.texto-card {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
 }
@@ -888,7 +888,6 @@ table {
 
 .button-card {
     height: 5.2rem;
-    width: 23rem;
     background-color: var(--brand);
     display: flex;
     justify-content: center;
@@ -1975,6 +1974,11 @@ table {
 
     .faq-perguntas {
         width: 100%;
+    }
+
+
+    .card-intersena {
+        height: 35rem;
     }
 
     /* .aposte-aqui-container {
